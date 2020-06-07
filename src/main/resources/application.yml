@@ -1,0 +1,35 @@
+#配置文件加在顺序application*.yml>application*.yaml>application*.properties
+#后加载的会覆盖之前加载的配置
+server:
+  port: 8082
+#普通配置   以空格区分层级关系
+name: lisi
+
+#对象配置
+person:
+  name: zhangsan
+  age: 18
+  addr: xian
+
+# 对象行内配置
+students: {name: wangwu,age: 19,addr: xian}
+
+#配置数组和集合
+
+animal:
+  - reha
+  - jinmao
+  - taidi
+#配置数组对象和集合
+
+city:
+  - name: beijing
+    addr: beifang
+  - name: xian
+    addr: xibei
+
+# Map集合配置
+
+map:
+  key1: value1
+  key2: value2
